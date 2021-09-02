@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head> <meta charset="UTF-8">
+		<link  id='GoogleFontsLink' href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'><link  id='GoogleFontsLink' href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet' type='text/css'>
+		<script>
+ WebFontConfig = {
+ google: 
+{families: ["Montserrat","Open Sans",]},active: function() { 
+ DrawTheChart(ChartData,ChartOptions,"chart-01","Line")}
+};
+		</script>
+		<script asyn src="https://charts.livegap.com/js/webfont.js">
+		</script><script src="https://charts.livegap.com/js/Chart.min.js"></script>
+		<script>
+function DrawTheChart(ChartData,ChartOptions,ChartId,ChartType){
+eval('var myLine = new Chart(document.getElementById(ChartId).getContext("2d")).'+ChartType+'(ChartData,ChartOptions);document.getElementById(ChartId).getContext("2d").stroke();')
+}
+		</script>
+	</head>
+	<body>
+		<canvas  id="chart-01" width="180" height="100"  style="background-color:rgba(0,0,0,0);border-radius:0px;width:400px;height:200px;padding-left:0px;padding-right:0px;padding-top:0px;padding-bottom:0px"></canvas>
+		<script> function MoreChartOptions(){} var ChartData = {labels : ["Junio",
+"Julio","Agosto",],datasets : [{fillColor :"rgba(52,152,219,0.38)",strokeColor : "rgba(52,152,219,1)",pointColor : "rgba(52,152,219,1)",markerShape :"circle",pointStrokeColor : "rgba(0,0,0,0)",data : [136000,138000,110000,],title:"Youtube"},]};ChartOptions= {decimalSeparator:".",thousandSeparator:",",spaceLeft:12,spaceRight:12,spaceTop:12,spaceBottom:12,scaleLabel:"<%=value+''%>",yAxisMinimumInterval:'none',scaleShowLabels:true,scaleShowLine:true,scaleLineStyle:"solid",scaleLineWidth:2,scaleLineColor:"rgba(220,220,220,0.2)",scaleOverlay :false,scaleOverride :true,scaleSteps:3,scaleStepWidth:10000,scaleStartValue:110000,legend:false,maxLegendCols:5,legendBlockSize:15,legendFillColor:'rgba(255,255,255,0.00)',legendColorIndicatorStrokeWidth:1,legendPosX:-2,legendPosY:4,legendXPadding:0,legendYPadding:0,legendBorders:false,legendBordersWidth:1,legendBordersStyle:"solid",legendBordersColors:"rgba(102,102,102,1)",legendBordersSpaceBefore:5,legendBordersSpaceLeft:5,legendBordersSpaceRight:5,legendBordersSpaceAfter:5,legendSpaceBeforeText:5,legendSpaceLeftText:5,legendSpaceRightText:5,legendSpaceAfterText:5,legendSpaceBetweenBoxAndText:5,legendSpaceBetweenTextHorizontal:5,legendSpaceBetweenTextVertical:5,legendFontFamily:"'Open Sans'",legendFontStyle:"normal normal",legendFontColor:"rgba(0,0,0,1)",legendFontSize:15,showYAxisMin:false,rotateLabels:"smart",xAxisBottom:true,yAxisLeft:true,yAxisRight:false,scaleFontFamily:"'Montserrat'",scaleFontStyle:"normal normal",scaleFontColor:"rgba(220,220,220,1)",scaleFontSize:14,pointLabelFontFamily:"'Open Sans'",pointLabelFontStyle:"normal normal",pointLabelFontColor:"rgba(102,102,102,1)",pointLabelFontSize:12,angleShowLineOut:true,angleLineStyle:"solid",angleLineWidth:1,angleLineColor:"rgba(0,0,0,0.1)",percentageInnerCutout:50,scaleShowGridLines:true,scaleGridLineStyle:"shortDash",scaleGridLineWidth:1,scaleGridLineColor:"rgba(220,220,220,0)",scaleXGridLinesStep:3,scaleYGridLinesStep:1,segmentShowStroke:true,segmentStrokeStyle:"solid",segmentStrokeWidth:2,segmentStrokeColor:"rgba(255,255,255,1.00)",datasetStroke:true,datasetFill : true,datasetStrokeStyle:"solid",datasetStrokeWidth:0,bezierCurve:true,bezierCurveTension :0.4,pointDotStrokeStyle:"solid",pointDotStrokeWidth : 0,pointDotRadius : 5,pointDot : true,scaleTickSizeBottom:20,scaleTickSizeTop:15,scaleTickSizeLeft:20,scaleTickSizeRight:11,barShowStroke : false,barBorderRadius:0,barStrokeStyle:"solid",barStrokeWidth:1,barValueSpacing:15,barDatasetSpacing:0,scaleShowLabelBackdrop :true,scaleBackdropColor:'rgba(255,255,255,0.75)',scaleBackdropPaddingX :2,scaleBackdropPaddingY :2,animation : true,onAnimationComplete : function(){MoreChartOptions()}};
+ DrawTheChart(ChartData,ChartOptions,"chart-01","Line");</script></body></html>
